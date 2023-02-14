@@ -1,6 +1,4 @@
-﻿using static System.Net.Mime.MediaTypeNames;
-
-namespace Assignment_6
+﻿namespace Assignment_6
 {
 	internal class Three
 	{
@@ -64,6 +62,43 @@ namespace Assignment_6
 			
 
 			return output;
+		}
+
+		public static string ThreeNine(string text, char x)
+		{
+			var remainingCharacters = text.Where(e => e != x);
+			var output = string.Empty;
+			foreach (var remainingCharacter in remainingCharacters)
+			{
+				output += remainingCharacter;
+			}
+
+			return output;
+		}
+
+		public static string ThreeTen(string text, string substr)
+		{
+			var remainingCharacters = text.Replace(substr, "");
+
+			return remainingCharacters;
+		}
+
+		public static string ThreeEleven(string text, string substr1, string substr2)
+		{
+			var newText = text.Replace(substr1, substr2);
+			return newText;
+		}
+
+		public static string ThreeTwelve(string text)
+		{
+			var output = 0;
+			var numbers = text.Split(" ");
+			foreach (var number in numbers)
+			{
+				output += int.Parse(number);
+			}
+
+			return output.ToString();
 		}
 	}
 }

@@ -54,6 +54,23 @@
 			//7.	delete the middle character if string length is odd or two middle characters if string length is even
 			var noMiddle = Three.ThreeSeven("qwertyuiop[");
 			//Console.WriteLine(noMiddle);
+
+			//9.delete all occurrences of the character<x>;
+			var stringWithRemovedCharacter = Three.ThreeNine("aaaaaaaaaaaaaaaaaaaaaaaaaaawoobnmdsabdnmsd", 'a');
+			//Console.WriteLine(stringWithRemovedCharacter);
+
+			//10.	delete all occurrences of the substring <substr>; 
+			var stringWithReplacedSubstring = Three.ThreeTen("aaaaaaaaaaaaaaaaaaaaaaaaaaawoobnmdsabdnmsd", "awoo");
+			//Console.WriteLine(stringWithReplacedSubstring);
+
+			//11. + replace all occurrences of the substring<substr1> on the substring<substr2>;
+			var replacedText = Three.ThreeEleven("awooawooawoo", "awoo", "no");
+			//Console.WriteLine(replacedText);
+			
+			//12.count the sum of all numbers occurred in the string;
+			var numbersSum = Three.ThreeTwelve("10 20 30 54 4");
+			//Console.WriteLine(numbersSum);
+
 		}
 	}
 }
