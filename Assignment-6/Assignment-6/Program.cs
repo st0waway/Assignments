@@ -55,6 +55,10 @@
 			var noMiddle = Three.ThreeSeven("qwertyuiop[");
 			//Console.WriteLine(noMiddle);
 
+			//8.	double every occurrence of the indicated character <x>; 
+			var doubledOccurence = Three.ThreeEight("asdfgasdfgasdfg", 'a');
+			Console.WriteLine(doubledOccurence);
+
 			//9.delete all occurrences of the character<x>;
 			var stringWithRemovedCharacter = Three.ThreeNine("aaaaaaaaaaaaaaaaaaaaaaaaaaawoobnmdsabdnmsd", 'a');
 			//Console.WriteLine(stringWithRemovedCharacter);
@@ -70,6 +74,10 @@
 			//12.count the sum of all numbers occurred in the string;
 			var numbersSum = Three.ThreeTwelve("10 20 30 54 4");
 			//Console.WriteLine(numbersSum);
+
+			//13.	count the sum of all digits occurred in the string; 
+			var digitsSum = Three.ThreeThirteen("123456798");
+			Console.WriteLine(digitsSum);
 
 		}
 	}

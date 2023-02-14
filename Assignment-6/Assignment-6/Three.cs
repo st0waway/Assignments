@@ -1,4 +1,6 @@
-﻿namespace Assignment_6
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace Assignment_6
 {
 	internal class Three
 	{
@@ -64,6 +66,20 @@
 			return output;
 		}
 
+		public static string ThreeEight(string letters, char x)
+		{
+			var output = string.Empty;
+			foreach (var letter in letters)
+			{
+				output += letter;
+				if (letter == x)
+				{
+					output += letter;
+				}
+			}
+			return output;
+		}
+
 		public static string ThreeNine(string text, char x)
 		{
 			var remainingCharacters = text.Where(e => e != x);
@@ -98,6 +114,16 @@
 				output += int.Parse(number);
 			}
 
+			return output.ToString();
+		}
+
+		public static string ThreeThirteen(string letters)
+		{
+			var output = 0;
+			foreach (var letter in letters)
+			{
+				output += int.Parse(letter.ToString());
+			}
 			return output.ToString();
 		}
 	}
