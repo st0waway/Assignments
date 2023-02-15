@@ -1,12 +1,36 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using System.Text;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assignment_6
 {
 	internal class Three
 	{
-		public static void ThreeOne(string x, string y)
+		public static string ThreeOne(string letters, char x, char y)
 		{
+			var sb = new StringBuilder();
+			var output = string.Empty;
+			foreach (var letter in letters)
+			{
+				sb.Append(letter);
+				if (letter == y)
+				{
+					sb.Append(x);
+				}
+			}
 
+			return sb.ToString();
+		}
+
+		public static string ThreeTwo(string letters)
+		{
+			var output = string.Empty;
+			for (int i = 0; i < letters.Length; i++)
+			{
+				output += letters[i+1];
+				output += letters[i++];
+			}
+
+			return output;
 		}
 
 		public static char ThreeThree(string text, char x, char y)
@@ -68,28 +92,28 @@ namespace Assignment_6
 
 		public static string ThreeEight(string letters, char x)
 		{
-			var output = string.Empty;
+			var sb = new StringBuilder();
 			foreach (var letter in letters)
 			{
-				output += letter;
+				sb.Append(letter);
 				if (letter == x)
 				{
-					output += letter;
+					sb.Append(letter);
 				}
 			}
-			return output;
+			return sb.ToString();
 		}
 
 		public static string ThreeNine(string text, char x)
 		{
 			var remainingCharacters = text.Where(e => e != x);
-			var output = string.Empty;
+			var sb = new StringBuilder();
 			foreach (var remainingCharacter in remainingCharacters)
 			{
-				output += remainingCharacter;
+				sb.Append(remainingCharacter);
 			}
 
-			return output;
+			return sb.ToString();
 		}
 
 		public static string ThreeTen(string text, string substr)
@@ -125,6 +149,61 @@ namespace Assignment_6
 				output += int.Parse(letter.ToString());
 			}
 			return output.ToString();
+		}
+
+		public static int[] ThreeFourteen(string letters, char x)
+		{
+			var first = letters.IndexOf(x);
+			var last = letters.LastIndexOf(x);
+			
+			return new int[] { first, last };
+		}
+
+		public static string ThreeFifteen(string letters)
+		{
+			letters = letters.Replace("...", "…");
+			return letters;
+		}
+
+		public static string ThreeSixteen(string letters)
+		{
+			var index = letters.IndexOf(":");
+			var output = letters.Substring(0, index);
+			return output;
+		}
+
+		public static string ThreeSeventeen(string letters)
+		{
+			var index = letters.IndexOf(":") + 1;
+			var output = letters.Substring(index, letters.Length - index);
+			return output;
+		}
+
+		public static string ThreeEighteen(string letters)
+		{
+			var output = string.Empty;
+			var firstIndex = letters.IndexOf("(") + 1;
+			var secondIndex = letters.IndexOf(")");
+			output = letters.Substring(0, firstIndex);
+			output += letters.Substring(secondIndex, letters.Length - secondIndex);
+			return output;
+		}
+
+		public static string ThreeNineteen(string letters)
+		{
+			var output = string.Empty;
+			var firstIndex = letters.IndexOf("{") + 1;
+			var secondIndex = letters.IndexOf("}");
+			output = letters.Substring(0, firstIndex);
+			output += letters.Substring(secondIndex, letters.Length - secondIndex);
+			return output;
+		}
+
+		public static string ThreeTwenty(string letters)
+		{
+			var aCount = letters.Where(e => e == 'a').Count();
+			var bCount = letters.Where(e => e == 'b').Count();
+			return $"a: {aCount}, b: {bCount}";
 		}
 	}
 }

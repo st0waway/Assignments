@@ -1,4 +1,7 @@
-﻿namespace Assignment_6
+﻿using System.Collections.Generic;
+using System.ComponentModel;
+
+namespace Assignment_6
 {
 	internal class Program
 	{
@@ -31,7 +34,17 @@
 			}
 
 
+			
 			//3.Write an application that provides the following operations with strings:
+
+			//1.	insert  character <x> after every occurrence of character <y>; 
+			var insertedString = Three.ThreeOne("aaaaaaaaaaaaaaaabbbcccc", 'b', 'a');
+			//Console.WriteLine(insertedString);
+
+			//2.	mix up the first character with the second one, the third character with the fourth one etc. 
+			var mixedCharacters = Three.ThreeTwo("abcdefghijklmnopqrstuvwxyz");
+			//Console.WriteLine(mixedCharacters);
+
 			//3.find, which of two indicated characters is occurred in the string more often;
 			var moreOften = Three.ThreeThree("aaaaaaaaaaaaaaaabbbcccc", 'a', 'b');
 			//Console.WriteLine($"{moreOften} occurs more often");
@@ -57,7 +70,7 @@
 
 			//8.	double every occurrence of the indicated character <x>; 
 			var doubledOccurence = Three.ThreeEight("asdfgasdfgasdfg", 'a');
-			Console.WriteLine(doubledOccurence);
+			//Console.WriteLine(doubledOccurence);
 
 			//9.delete all occurrences of the character<x>;
 			var stringWithRemovedCharacter = Three.ThreeNine("aaaaaaaaaaaaaaaaaaaaaaaaaaawoobnmdsabdnmsd", 'a');
@@ -70,15 +83,45 @@
 			//11. + replace all occurrences of the substring<substr1> on the substring<substr2>;
 			var replacedText = Three.ThreeEleven("awooawooawoo", "awoo", "no");
 			//Console.WriteLine(replacedText);
-			
+
 			//12.count the sum of all numbers occurred in the string;
 			var numbersSum = Three.ThreeTwelve("10 20 30 54 4");
 			//Console.WriteLine(numbersSum);
 
 			//13.	count the sum of all digits occurred in the string; 
 			var digitsSum = Three.ThreeThirteen("123456798");
-			Console.WriteLine(digitsSum);
+			//Console.WriteLine(digitsSum);
 
+			//14.find indexes of the first and the last occurrences of the character<x>;
+			var indexes = Three.ThreeFourteen("asdasdasdasdasda", 'a');
+			foreach (var index in indexes)
+			{
+				//Console.WriteLine(index);
+			}
+
+			//15.replace all groups of adjacent dots with ellipsis;
+			var textWithEllipsis = Three.ThreeFifteen("and...this...is...how...it...went...");
+			//Console.WriteLine(textWithEllipsis);
+
+			//16.	display all characters before the first colon occurrence in the string; 
+			var textBeforeColon = Three.ThreeSixteen("aaaaaaaaaaaaaaaaaaaaaaaaaaq:wbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
+			//Console.WriteLine(textBeforeColon);
+
+			//17.	display all characters after the first colon occurrence in the string; 
+			var textAfterColon = Three.ThreeSeventeen("aaaaaaaaaaaaaaaaaaaaaaaaaaq:wbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
+			//Console.WriteLine(textAfterColon);
+
+			//18.delete all characters inside the parenthesize.
+			var deleteInsideParanthesize = Three.ThreeEighteen("aaaaaaaaaaaaaaaaa(12345)aaaaaaaaaaaaaaa");
+			//Console.WriteLine(deleteInsideParanthesize);
+
+			//19.delete all characters inside the curly braces;
+			var deleteInsideCurlyBraces = Three.ThreeNineteen("aaaaaaaaaaaaaaaaaaaaaf{qwerty}gbbbbbbbbbbbbbbb");
+			//Console.WriteLine(deleteInsideCurlyBraces);
+
+			//20.	count and display statistics of character occurrences in the string.
+			var lettersCount = Three.ThreeTwenty("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabb");
+			//Console.WriteLine(lettersCount);
 		}
 	}
 }
