@@ -1,0 +1,15 @@
+D:\Dev\Internship\Assignment-07\Assignment-07\obj\Debug\net7.0\Assignment-07.csproj.AssemblyReference.cache
+D:\Dev\Internship\Assignment-07\Assignment-07\obj\Debug\net7.0\Assignment-07.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\Internship\Assignment-07\Assignment-07\obj\Debug\net7.0\Assignment-07.AssemblyInfoInputs.cache
+D:\Dev\Internship\Assignment-07\Assignment-07\obj\Debug\net7.0\Assignment-07.AssemblyInfo.cs
+D:\Dev\Internship\Assignment-07\Assignment-07\obj\Debug\net7.0\Assignment-07.csproj.CoreCompileInputs.cache
+D:\Dev\Internship\Assignment-07\Assignment-07\bin\Debug\net7.0\Assignment-07.exe
+D:\Dev\Internship\Assignment-07\Assignment-07\bin\Debug\net7.0\Assignment-07.deps.json
+D:\Dev\Internship\Assignment-07\Assignment-07\bin\Debug\net7.0\Assignment-07.runtimeconfig.json
+D:\Dev\Internship\Assignment-07\Assignment-07\bin\Debug\net7.0\Assignment-07.dll
+D:\Dev\Internship\Assignment-07\Assignment-07\bin\Debug\net7.0\Assignment-07.pdb
+D:\Dev\Internship\Assignment-07\Assignment-07\obj\Debug\net7.0\Assignment-07.dll
+D:\Dev\Internship\Assignment-07\Assignment-07\obj\Debug\net7.0\refint\Assignment-07.dll
+D:\Dev\Internship\Assignment-07\Assignment-07\obj\Debug\net7.0\Assignment-07.pdb
+D:\Dev\Internship\Assignment-07\Assignment-07\obj\Debug\net7.0\Assignment-07.genruntimeconfig.cache
+D:\Dev\Internship\Assignment-07\Assignment-07\obj\Debug\net7.0\ref\Assignment-07.dll
