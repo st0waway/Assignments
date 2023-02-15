@@ -1,5 +1,4 @@
 ﻿using System.Text;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assignment_6
 {
@@ -7,18 +6,18 @@ namespace Assignment_6
 	{
 		public static string ThreeOne(string letters, char x, char y)
 		{
-			var sb = new StringBuilder();
+			var stringBuilder = new StringBuilder();
 			var output = string.Empty;
 			foreach (var letter in letters)
 			{
-				sb.Append(letter);
+				stringBuilder.Append(letter);
 				if (letter == y)
 				{
-					sb.Append(x);
+					stringBuilder.Append(x);
 				}
 			}
 
-			return sb.ToString();
+			return stringBuilder.ToString();
 		}
 
 		public static string ThreeTwo(string letters)
@@ -33,31 +32,31 @@ namespace Assignment_6
 			return output;
 		}
 
-		public static char ThreeThree(string text, char x, char y)
+		public static string ThreeThree(string text, char x, char y)
 		{
 			var xCount = text.Count(e => e.Equals(x));
 			var yCount = text.Count(e => e.Equals(y));
 			if (xCount > yCount)
 			{
-				return x;
+				return $"{x} occurs more often";
 			}
 
-			return y;
+			return $"{y} occurs more often";
 		}
 
-		public static int[] ThreeFour(string text, char x, char y)
+		public static string ThreeFour(string text, char x, char y)
 		{
 			var xCount = text.Count(e => e.Equals(x));
 			var yCount = text.Count(e => e.Equals(y));
-			return new int[] { xCount, yCount };
+			return $"{x} occurs {xCount} times, {y} occurs {yCount} times";
 		}
 
-		public static int ThreeFive(string text)
+		public static string ThreeFive(string text)
 		{
-			return text.Distinct().Count();
+			return text.Distinct().Count().ToString();
 		}
 
-		public static bool ThreeSix(string text)
+		public static string ThreeSix(string text)
 		{
 			for (int i = 0; i < text.Length; i++)
 			{
@@ -65,11 +64,11 @@ namespace Assignment_6
 				{
 					if (text[i] == text[i + 1])
 					{
-						return true;
+						return "string has two adjacent identical characters";
 					}
 				}
 			}
-			return false;
+			return "string doesn't have two adjacent identical characters";
 		}
 
 		public static string ThreeSeven(string text)
@@ -92,28 +91,28 @@ namespace Assignment_6
 
 		public static string ThreeEight(string letters, char x)
 		{
-			var sb = new StringBuilder();
+			var stringBuilder = new StringBuilder();
 			foreach (var letter in letters)
 			{
-				sb.Append(letter);
+				stringBuilder.Append(letter);
 				if (letter == x)
 				{
-					sb.Append(letter);
+					stringBuilder.Append(letter);
 				}
 			}
-			return sb.ToString();
+			return stringBuilder.ToString();
 		}
 
 		public static string ThreeNine(string text, char x)
 		{
 			var remainingCharacters = text.Where(e => e != x);
-			var sb = new StringBuilder();
+			var stringBuilder = new StringBuilder();
 			foreach (var remainingCharacter in remainingCharacters)
 			{
-				sb.Append(remainingCharacter);
+				stringBuilder.Append(remainingCharacter);
 			}
 
-			return sb.ToString();
+			return stringBuilder.ToString();
 		}
 
 		public static string ThreeTen(string text, string substr)
@@ -151,12 +150,12 @@ namespace Assignment_6
 			return output.ToString();
 		}
 
-		public static int[] ThreeFourteen(string letters, char x)
+		public static string ThreeFourteen(string letters, char x)
 		{
 			var first = letters.IndexOf(x);
 			var last = letters.LastIndexOf(x);
-			
-			return new int[] { first, last };
+
+			return $"first: {first}, last: {last}";
 		}
 
 		public static string ThreeFifteen(string letters)

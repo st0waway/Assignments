@@ -1,32 +1,30 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
 
+using static System.Net.Mime.MediaTypeNames;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using Console = System.Console;
+
 namespace Assignment_6
 {
 	internal class Program
 	{
 		static void Main(string[] args)
 		{
-
-			//1.	In one-dimensional array of integers perform the following operations: 
-			//1.	+Delete all even numbers. 
 			var OddNumbers = One.OneOne(new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10 });
 			foreach (var oddNumber in OddNumbers)
 			{
 				//Console.WriteLine(oddNumber);
 			}
 
-			//2.  + Insert new element after all elements beginning with the indicated digit. 
 			var newArray = One.OneTwo(new int[] { 10, 20, 30, 34, 37, 45 }, 3, 1);
 
-			//3.	+Delete from array all repeating elements except of their first occurrence. 
 			var distinctNumbers = One.OneThree(new int[] { 1, 1, 2, 3, 4, 4, 5, 5, 5, 5, 5, 5, 3, 2, 1, 4, 8 });
 			foreach (var distinctNumber in distinctNumbers)
 			{
 				//Console.WriteLine(distinctNumber);
 			}
 
-			//5.	+Compress array by deleting all zero-value elements. 
 			var noZeroNumbers = One.OneFive(new int[] { 1, 1, 2, 3, 4, 4, 5, 5, 5, 0, 0, 5, 5, 5, 3, 2, 1, 4, 8, 0, 0, 0 });
 			foreach (var noZeroNumber in noZeroNumbers)
 			{
@@ -35,93 +33,96 @@ namespace Assignment_6
 
 
 			
-			//3.Write an application that provides the following operations with strings:
+			var resultThreeOne = Three.ThreeOne("aaaaaaaaaaaaaaaabbbcccc", 'b', 'a');
+			//Console.WriteLine(resultThreeOne);
 
-			//1.	insert  character <x> after every occurrence of character <y>; 
-			var insertedString = Three.ThreeOne("aaaaaaaaaaaaaaaabbbcccc", 'b', 'a');
-			//Console.WriteLine(insertedString);
+			var resultThreeTwo = Three.ThreeTwo("abcdefghijklmnopqrstuvwxyz");
+			//Console.WriteLine(resultThreeTwo);
 
-			//2.	mix up the first character with the second one, the third character with the fourth one etc. 
-			var mixedCharacters = Three.ThreeTwo("abcdefghijklmnopqrstuvwxyz");
-			//Console.WriteLine(mixedCharacters);
+			var resultThreeThree = Three.ThreeThree("aaaaaaaaaaaaaaaabbbccccccccccccccccccccccccccccccccccccc", 'a', 'c');
+			//Console.WriteLine(resultThreeThree);
 
-			//3.find, which of two indicated characters is occurred in the string more often;
-			var moreOften = Three.ThreeThree("aaaaaaaaaaaaaaaabbbcccc", 'a', 'b');
-			//Console.WriteLine($"{moreOften} occurs more often");
+			var resultThreeFour = Three.ThreeFour("aaaaaaaaaaaaaaaabbbcccc", 'a', 'c');
+			//Console.WriteLine(resultThreeFour);
+			
+			var resultThreeFive = Three.ThreeFive("aaaaaaaaaaaaaaaabbbccccd");
+			//Console.WriteLine(resultThreeFive);
 
-			//4.count full number of occurrences of<x> and<y> characters;
-			var occurencies = Three.ThreeFour("aaaaaaaaaaaaaaaabbbcccc", 'a', 'b');
-			foreach (var occurency in occurencies)
-			{
-				//Console.WriteLine(occurency);
-			}
+			var resultThreeSix = Three.ThreeSix("asdfghjklasdfghjkl;11");
+			//Console.WriteLine(resultThreeSix);
 
-			//5.  + count number of different characters in the string;
-			var numberOfDifferentCharacters = Three.ThreeFive("aaaaaaaaaaaaaaaabbbccccd");
-			//Console.WriteLine(numberOfDifferentCharacters);
+			var resultThreeSeven = Three.ThreeSeven("aaaabbcccc");
+			//Console.WriteLine(resultThreeSeven);
 
-			//6.find out if the string has two adjacent identical characters;
-			var hasTwoAdjacent = Three.ThreeSix("asdfghjklasdfghjkl;11");
-			//Console.WriteLine(hasTwoAdjacent);
+			var resultThreeEight = Three.ThreeEight("abababababa", 'a');
+			//Console.WriteLine(resultThreeEight);
 
-			//7.	delete the middle character if string length is odd or two middle characters if string length is even
-			var noMiddle = Three.ThreeSeven("qwertyuiop[");
-			//Console.WriteLine(noMiddle);
+			var resultThreeNine = Three.ThreeNine("aaaaaaaaaaaaaaaaaaaaaaaaaaawoobnmdsabdnmsd", 'a');
+			//Console.WriteLine(resultThreeNine);
 
-			//8.	double every occurrence of the indicated character <x>; 
-			var doubledOccurence = Three.ThreeEight("asdfgasdfgasdfg", 'a');
-			//Console.WriteLine(doubledOccurence);
+			var resultThreeTen = Three.ThreeTen("aaaaaaaaaaaaaaaaaaaaaaaaaaawoobnmdsabdnmsd", "awoo");
+			//Console.WriteLine(resultThreeTen);
 
-			//9.delete all occurrences of the character<x>;
-			var stringWithRemovedCharacter = Three.ThreeNine("aaaaaaaaaaaaaaaaaaaaaaaaaaawoobnmdsabdnmsd", 'a');
-			//Console.WriteLine(stringWithRemovedCharacter);
+			var resultThreeEleven = Three.ThreeEleven("awooawooawoo", "awoo", "no");
+			//Console.WriteLine(resultThreeEleven);
 
-			//10.	delete all occurrences of the substring <substr>; 
-			var stringWithReplacedSubstring = Three.ThreeTen("aaaaaaaaaaaaaaaaaaaaaaaaaaawoobnmdsabdnmsd", "awoo");
-			//Console.WriteLine(stringWithReplacedSubstring);
+			var resultThreeTwelve = Three.ThreeTwelve("10 20 30 54 4");
+			//Console.WriteLine(resultThreeTwelve);
 
-			//11. + replace all occurrences of the substring<substr1> on the substring<substr2>;
-			var replacedText = Three.ThreeEleven("awooawooawoo", "awoo", "no");
-			//Console.WriteLine(replacedText);
+			var reusltThreeThirteen = Three.ThreeThirteen("123456798");
+			//Console.WriteLine(reusltThreeThirteen);
 
-			//12.count the sum of all numbers occurred in the string;
-			var numbersSum = Three.ThreeTwelve("10 20 30 54 4");
-			//Console.WriteLine(numbersSum);
+			var resultThreeFourteen = Three.ThreeFourteen("asdasdasdasdasda", 'a');
+			//Console.WriteLine(resultThreeFourteen);
 
-			//13.	count the sum of all digits occurred in the string; 
-			var digitsSum = Three.ThreeThirteen("123456798");
-			//Console.WriteLine(digitsSum);
+			var resultThreeFifteen = Three.ThreeFifteen("and...this...is...how...it...went...");
+			//Console.WriteLine(resultThreeFifteen);
 
-			//14.find indexes of the first and the last occurrences of the character<x>;
-			var indexes = Three.ThreeFourteen("asdasdasdasdasda", 'a');
-			foreach (var index in indexes)
-			{
-				//Console.WriteLine(index);
-			}
+			var resultThreeSixteen = Three.ThreeSixteen("aaaaaaaaaaaaaaaaaaaaaaaaaaq:wbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
+			//Console.WriteLine(resultThreeSixteen);
 
-			//15.replace all groups of adjacent dots with ellipsis;
-			var textWithEllipsis = Three.ThreeFifteen("and...this...is...how...it...went...");
-			//Console.WriteLine(textWithEllipsis);
+			var resultThreeSeventeen = Three.ThreeSeventeen("aaaaaaaaaaaaaaaaaaaaaaaaaaq:wbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
+			//Console.WriteLine(resultThreeSeventeen);
 
-			//16.	display all characters before the first colon occurrence in the string; 
-			var textBeforeColon = Three.ThreeSixteen("aaaaaaaaaaaaaaaaaaaaaaaaaaq:wbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
-			//Console.WriteLine(textBeforeColon);
+			var resultThreeEighteen = Three.ThreeEighteen("aaaaaaaaaaaaaaaaa(12345)aaaaaaaaaaaaaaa");
+			//Console.WriteLine(resultThreeEighteen);
 
-			//17.	display all characters after the first colon occurrence in the string; 
-			var textAfterColon = Three.ThreeSeventeen("aaaaaaaaaaaaaaaaaaaaaaaaaaq:wbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
-			//Console.WriteLine(textAfterColon);
+			var resultThreeNineteen = Three.ThreeNineteen("aaaaaaaaaaaaaaaaaaaaaf{qwerty}gbbbbbbbbbbbbbbb");
+			//Console.WriteLine(resultThreeNineteen);
 
-			//18.delete all characters inside the parenthesize.
-			var deleteInsideParanthesize = Three.ThreeEighteen("aaaaaaaaaaaaaaaaa(12345)aaaaaaaaaaaaaaa");
-			//Console.WriteLine(deleteInsideParanthesize);
+			var resultThreeTwenty = Three.ThreeTwenty("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabb");
+			//Console.WriteLine(resultThreeTwenty);
+			
 
-			//19.delete all characters inside the curly braces;
-			var deleteInsideCurlyBraces = Three.ThreeNineteen("aaaaaaaaaaaaaaaaaaaaaf{qwerty}gbbbbbbbbbbbbbbb");
-			//Console.WriteLine(deleteInsideCurlyBraces);
+			var resultFourOne = Four.FourOne("this is a test please pay the lease", "eas");
+			//Console.WriteLine(resultFourOne + "!");
 
-			//20.	count and display statistics of character occurrences in the string.
-			var lettersCount = Three.ThreeTwenty("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabb");
-			//Console.WriteLine(lettersCount);
+			var resultFourTwo = Four.FourTwo("this is a test please pay the lease", 4);
+			//Console.WriteLine(resultFourTwo);
+
+			var resultFourThree = Four.FourThree("This is a Test please Be Polite");
+			//Console.WriteLine(resultFourThree);
+
+			var resultFourFour = Four.FourFour("asdf1 asdf2 sadf aggdf dsffsa reewer3 dsadsa2");
+			//Console.WriteLine(resultFourFour);
+
+			var resultFourFive = Four.FourFive("asdfx asdf gffgdg fdsadsad terwerzx dsadasx", 'x');
+			//Console.WriteLine(resultFourFive);
+
+			var resultFourSix = Four.FourSix("awoo bazooka hello no", 'a');
+			//Console.WriteLine(resultFourSix);
+
+			var resultFourSeven = Four.FourSeven("a b c das vcd dsadf f e w q dsa");
+			//Console.WriteLine(resultFourSeven);
+
+			var resultFourEight = Four.FourEight(" bad bad dsd dsd hello yes");
+			//Console.WriteLine(resultFourEight);
+
+			var resultFourNine = Four.FourNine("asd asd sad das asd", "asd");
+			//Console.WriteLine(resultFourNine);
+
+			var resultFourTen = Four.FourTen("Asd asd rfd tffd ASD");
+			//Console.WriteLine(resultFourTen);
 		}
 	}
 }
