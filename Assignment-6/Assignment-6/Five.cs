@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using System.Text.RegularExpressions;
 
 namespace Assignment_6
 {
@@ -54,5 +55,40 @@ namespace Assignment_6
 
 			return stringBuilder.ToString().TrimEnd();
 		}
+
+		public static string FiveTwo(string input)
+		{
+			var stringBuilder = new StringBuilder();
+			var reversedLetters = input.ToCharArray().Reverse();
+			foreach (var reversedLetter in reversedLetters)
+			{
+				stringBuilder.Append(reversedLetter);
+			}
+
+			return stringBuilder.ToString();
+		}
+
+		public static string FiveThree(string letters)
+		{
+			if (letters.SequenceEqual(letters.Reverse()))
+			{
+				return "it is";
+			}
+			return "it isn't";
+		}
+
+
+
+		public static string FiveFour(params int[] numbers)
+		{
+			var sum = 0;
+			foreach (var number in numbers)
+			{
+				sum += number;
+			}
+
+			return sum.ToString();
+		}
+
 	}
 }

@@ -147,8 +147,8 @@ namespace Assignment_6
 			//Console.WriteLine(resultFourSeventeen);
 
 			var resultFourEighteen = Four.FourEighteen("asd asd asd asd qwe ert qwe qwe qwe", 3);
-			Console.WriteLine(resultFourEighteen);
-			
+			//Console.WriteLine(resultFourEighteen);
+
 			var resultFourNineteen = Four.FourNineteen("asd basd gdf dsa nbvc mnd");
 			//Console.WriteLine(resultFourNineteen);
 
@@ -164,6 +164,19 @@ namespace Assignment_6
 
 			var resultFiveOneSeven = Five.FiveOneSeven("131 456 789 456 123 454 787");
 			//Console.WriteLine(resultFiveOneSeven);
+
+			var resultFiveTwo = Five.FiveTwo("asdfghj");
+			//Console.WriteLine(resultFiveTwo);
+
+			var resultFiveThree = Five.FiveThree("AasdsaA");
+			Console.WriteLine(resultFiveThree);
+
+			var resultFiveFour = Five.FiveFour(1, 2, 3, 4, 5);
+			var resultFiveFourv2 = Five.FiveFour(1, 2, 3);
+			var resultFiveFourv3 = Five.FiveFour(1, 2, 3, 4, 6, 7, 9, 0);
+			//Console.WriteLine(resultFiveFour);
+			//Console.WriteLine(resultFiveFourv2);
+			//Console.WriteLine(resultFiveFourv3);
 		}
 	}
 }
