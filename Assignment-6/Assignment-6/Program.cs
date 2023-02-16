@@ -3,6 +3,7 @@ using System.ComponentModel;
 
 using static System.Net.Mime.MediaTypeNames;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+
 using Console = System.Console;
 
 namespace Assignment_6
@@ -32,7 +33,7 @@ namespace Assignment_6
 			}
 
 
-			
+
 			var resultThreeOne = Three.ThreeOne("aaaaaaaaaaaaaaaabbbcccc", 'b', 'a');
 			//Console.WriteLine(resultThreeOne);
 
@@ -44,7 +45,7 @@ namespace Assignment_6
 
 			var resultThreeFour = Three.ThreeFour("aaaaaaaaaaaaaaaabbbcccc", 'a', 'c');
 			//Console.WriteLine(resultThreeFour);
-			
+
 			var resultThreeFive = Three.ThreeFive("aaaaaaaaaaaaaaaabbbccccd");
 			//Console.WriteLine(resultThreeFive);
 
@@ -92,7 +93,7 @@ namespace Assignment_6
 
 			var resultThreeTwenty = Three.ThreeTwenty("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabb");
 			//Console.WriteLine(resultThreeTwenty);
-			
+
 
 			var resultFourOne = Four.FourOne("this is a test please pay the lease", "eas");
 			//Console.WriteLine(resultFourOne + "!");
@@ -123,6 +124,22 @@ namespace Assignment_6
 
 			var resultFourTen = Four.FourTen("Asd asd rfd tffd ASD");
 			//Console.WriteLine(resultFourTen);
+
+			var resultFourEleven = Four.FourEleven("the longest word is it probably is dinosaur but that's impossible and yet it can be");
+			//Console.WriteLine(resultFourEleven);
+
+			var resultFourTwelve = Four.FourTwelve("asdfghj asdf asdfgh asdfgh qwertyuiop");
+			//Console.WriteLine(resultFourTwelve);
+
+			var resultFourThirteen = Four.FourThirteen("qwe asdfg qw fgfd dsdsas a df g");
+			//Console.WriteLine(resultFourThirteen);
+
+			var resultFourFourteen = Four.FourFourteen("asd as sd fd gf df asd we qwe asdf");
+			//Console.WriteLine(resultFourFourteen);
+
+			var resultFourFifteen = Four.FourFifteen("asdsa asdfgdsas asdfghjhgfdsa asdfcvx");
+			Console.WriteLine(resultFourFifteen);
+
 		}
 	}
 }

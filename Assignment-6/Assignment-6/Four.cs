@@ -137,5 +137,85 @@ namespace Assignment_6
 
 			return counter.ToString();
 		}
+
+		public static string FourEleven(string words)
+		{
+			var longestWord = string.Empty;
+			var longestWordLength = 0;
+			var splitWords = words.Split(" ");
+			foreach (var splitWord in splitWords)
+			{
+				if (splitWord.Length > longestWordLength)
+				{
+					longestWordLength = splitWord.Length;
+					longestWord = splitWord;
+				}
+			}
+
+			return longestWord;
+		}
+
+		public static string FourTwelve(string words)
+		{
+			var splitWords = words.Split(" ");
+			var stringBuilder = new StringBuilder();
+			foreach (var splitWord in splitWords)
+			{
+				if (splitWord.Length >= 7)
+				{
+					stringBuilder.Append(splitWord + " ");
+				}
+			}
+
+			return stringBuilder.ToString().TrimEnd();
+		}
+
+		public static string FourThirteen(string words)
+		{
+			var splitWords = words.Split(" ");
+			var shortestWord = splitWords[0];
+			var shortestLength = splitWords[0].Length;
+
+			foreach (var splitWord in splitWords)
+			{
+				if (splitWord.Length <= shortestLength)
+				{
+					shortestLength = splitWord.Length;
+					shortestWord = splitWord;
+				}
+			}
+
+			return shortestWord;
+		}
+
+		public static string FourFourteen(string words)
+		{
+			var splitWords = words.Split(" ");
+			var stringBuilder = new StringBuilder();
+			foreach (var splitWord in splitWords)
+			{
+				if (splitWord.Length < 3)
+				{
+					stringBuilder.Append(splitWord + " ");
+				}
+			}
+
+			return stringBuilder.ToString().TrimEnd();
+		}
+
+		public static string FourFifteen(string words)
+		{
+			var splitWords = words.Split(" ");
+			var stringBuilder = new StringBuilder();
+			foreach (var splitWord in splitWords)
+			{
+				if (splitWord.SequenceEqual(splitWord.Reverse()))
+				{
+					stringBuilder.Append(splitWord + " ");
+				}
+			}
+
+			return stringBuilder.ToString().TrimEnd();
+		}
 	}
 }
