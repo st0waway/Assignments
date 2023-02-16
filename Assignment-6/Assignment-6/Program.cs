@@ -138,8 +138,32 @@ namespace Assignment_6
 			//Console.WriteLine(resultFourFourteen);
 
 			var resultFourFifteen = Four.FourFifteen("asdsa asdfgdsas asdfghjhgfdsa asdfcvx");
-			Console.WriteLine(resultFourFifteen);
+			//Console.WriteLine(resultFourFifteen);
 
+			var resultFourSixteen = Four.FourSixteen("it's the ,  final , countdown,   dsadasd ");
+			//Console.WriteLine(resultFourSixteen);
+
+			var resultFourSeventeen = Four.FourSeventeen("asd asd asd asdf asdfg asdfgh asd asd");
+			//Console.WriteLine(resultFourSeventeen);
+
+			var resultFourEighteen = Four.FourEighteen("asd asd asd asd qwe ert qwe qwe qwe", 3);
+			Console.WriteLine(resultFourEighteen);
+			
+			var resultFourNineteen = Four.FourNineteen("asd basd gdf dsa nbvc mnd");
+			//Console.WriteLine(resultFourNineteen);
+
+			var resultFourTwenty = Four.FourTwenty("asdfghj asdfgh asdf ass as a");
+			//Console.WriteLine(resultFourTwenty);
+
+
+			var resultFiveOneFive = Five.FiveOneFive(1234);
+			//Console.WriteLine(resultFiveOneFive);
+
+			var resultFiveOneSix = Five.FiveOneSix("12 32 43 54 43 23 22 22 33 44 55");
+			//Console.WriteLine(resultFiveOneSix);
+
+			var resultFiveOneSeven = Five.FiveOneSeven("131 456 789 456 123 454 787");
+			//Console.WriteLine(resultFiveOneSeven);
 		}
 	}
 }

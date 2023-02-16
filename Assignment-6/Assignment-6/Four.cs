@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using System.Text.RegularExpressions;
 
 namespace Assignment_6
 {
@@ -217,5 +218,53 @@ namespace Assignment_6
 
 			return stringBuilder.ToString().TrimEnd();
 		}
+
+		public static string FourSixteen(string words)
+		{
+			words = Regex.Replace(words, " *, *", ", ");
+			return words;
+		}
+
+		public static string FourSeventeen(string words)
+		{
+			var output = string.Join(" ", words.Split(" ").Distinct());
+			return output;
+		}
+
+		public static string FourEighteen(string words, int times)
+		{
+			var stringBuilder = new StringBuilder();
+			
+			var splitWords = words.Split(" ");
+			var counter = 0;
+			foreach (var splitWord in splitWords)
+			{
+				counter = splitWords.Where(e => e == splitWord).Count();
+				if (counter > times)
+				{
+					stringBuilder.Append(splitWord + " ");
+				}
+
+				counter = 0;
+			}
+
+			var filteredWords = string.Join(" ", stringBuilder.ToString().Split(" ").Distinct());
+			return filteredWords;
+		}
+
+		public static string FourNineteen(string words)
+		{
+			var splitWords = words.Split(" ");
+			Array.Sort(splitWords);
+			return string.Join(" ", splitWords);
+		}
+
+		public static string FourTwenty(string words)
+		{
+			var splitWords = words.Split(" ");
+			Array.Sort(splitWords, (x, y) => x.Length.CompareTo(y.Length));
+			return string.Join(" ", splitWords);
+		}
+
 	}
 }
