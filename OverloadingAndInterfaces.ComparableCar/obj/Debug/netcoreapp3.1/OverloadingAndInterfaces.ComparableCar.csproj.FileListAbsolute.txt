@@ -1,0 +1,28 @@
+D:\Video\Intership\In Russian\1. C#\07. Overloading And Interfaces\OverloadingAndInterfaces\OverloadingAndInterfaces\OverloadingAndInterfaces.ComparableCar\bin\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.exe
+D:\Video\Intership\In Russian\1. C#\07. Overloading And Interfaces\OverloadingAndInterfaces\OverloadingAndInterfaces\OverloadingAndInterfaces.ComparableCar\bin\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.deps.json
+D:\Video\Intership\In Russian\1. C#\07. Overloading And Interfaces\OverloadingAndInterfaces\OverloadingAndInterfaces\OverloadingAndInterfaces.ComparableCar\bin\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.runtimeconfig.json
+D:\Video\Intership\In Russian\1. C#\07. Overloading And Interfaces\OverloadingAndInterfaces\OverloadingAndInterfaces\OverloadingAndInterfaces.ComparableCar\bin\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.runtimeconfig.dev.json
+D:\Video\Intership\In Russian\1. C#\07. Overloading And Interfaces\OverloadingAndInterfaces\OverloadingAndInterfaces\OverloadingAndInterfaces.ComparableCar\bin\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.dll
+D:\Video\Intership\In Russian\1. C#\07. Overloading And Interfaces\OverloadingAndInterfaces\OverloadingAndInterfaces\OverloadingAndInterfaces.ComparableCar\bin\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.pdb
+D:\Video\Intership\In Russian\1. C#\07. Overloading And Interfaces\OverloadingAndInterfaces\OverloadingAndInterfaces\OverloadingAndInterfaces.ComparableCar\obj\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.csproj.AssemblyReference.cache
+D:\Video\Intership\In Russian\1. C#\07. Overloading And Interfaces\OverloadingAndInterfaces\OverloadingAndInterfaces\OverloadingAndInterfaces.ComparableCar\obj\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.GeneratedMSBuildEditorConfig.editorconfig
+D:\Video\Intership\In Russian\1. C#\07. Overloading And Interfaces\OverloadingAndInterfaces\OverloadingAndInterfaces\OverloadingAndInterfaces.ComparableCar\obj\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.AssemblyInfoInputs.cache
+D:\Video\Intership\In Russian\1. C#\07. Overloading And Interfaces\OverloadingAndInterfaces\OverloadingAndInterfaces\OverloadingAndInterfaces.ComparableCar\obj\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.AssemblyInfo.cs
+D:\Video\Intership\In Russian\1. C#\07. Overloading And Interfaces\OverloadingAndInterfaces\OverloadingAndInterfaces\OverloadingAndInterfaces.ComparableCar\obj\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.csproj.CoreCompileInputs.cache
+D:\Video\Intership\In Russian\1. C#\07. Overloading And Interfaces\OverloadingAndInterfaces\OverloadingAndInterfaces\OverloadingAndInterfaces.ComparableCar\obj\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.dll
+D:\Video\Intership\In Russian\1. C#\07. Overloading And Interfaces\OverloadingAndInterfaces\OverloadingAndInterfaces\OverloadingAndInterfaces.ComparableCar\obj\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.pdb
+D:\Video\Intership\In Russian\1. C#\07. Overloading And Interfaces\OverloadingAndInterfaces\OverloadingAndInterfaces\OverloadingAndInterfaces.ComparableCar\obj\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.genruntimeconfig.cache
+D:\Dev\Internship\Assignments\OverloadingAndInterfaces.ComparableCar\bin\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.exe
+D:\Dev\Internship\Assignments\OverloadingAndInterfaces.ComparableCar\bin\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.deps.json
+D:\Dev\Internship\Assignments\OverloadingAndInterfaces.ComparableCar\bin\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.runtimeconfig.json
+D:\Dev\Internship\Assignments\OverloadingAndInterfaces.ComparableCar\bin\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.runtimeconfig.dev.json
+D:\Dev\Internship\Assignments\OverloadingAndInterfaces.ComparableCar\bin\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.dll
+D:\Dev\Internship\Assignments\OverloadingAndInterfaces.ComparableCar\bin\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.pdb
+D:\Dev\Internship\Assignments\OverloadingAndInterfaces.ComparableCar\obj\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.csproj.AssemblyReference.cache
+D:\Dev\Internship\Assignments\OverloadingAndInterfaces.ComparableCar\obj\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\Internship\Assignments\OverloadingAndInterfaces.ComparableCar\obj\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.AssemblyInfoInputs.cache
+D:\Dev\Internship\Assignments\OverloadingAndInterfaces.ComparableCar\obj\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.AssemblyInfo.cs
+D:\Dev\Internship\Assignments\OverloadingAndInterfaces.ComparableCar\obj\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.csproj.CoreCompileInputs.cache
+D:\Dev\Internship\Assignments\OverloadingAndInterfaces.ComparableCar\obj\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.dll
+D:\Dev\Internship\Assignments\OverloadingAndInterfaces.ComparableCar\obj\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.pdb
+D:\Dev\Internship\Assignments\OverloadingAndInterfaces.ComparableCar\obj\Debug\netcoreapp3.1\OverloadingAndInterfaces.ComparableCar.genruntimeconfig.cache
