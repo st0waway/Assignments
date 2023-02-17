@@ -155,6 +155,18 @@ namespace Assignment_6
 			var resultFourTwenty = Four.FourTwenty("asdfghj asdfgh asdf ass as a");
 			//Console.WriteLine(resultFourTwenty);
 
+			
+			var resultFiveOneOne = Five.FiveOneOne(1, 1, 43, 2);
+			//Console.WriteLine(resultFiveOneOne);
+
+			var resultFiveOneTwo = Five.FiveOneTwo(5, -2, 6, 1, 1, 1);
+			//Console.WriteLine(resultFiveOneTwo);
+
+			var resultFiveOneThree = Five.FiveOneThree(16, 19);
+			//Console.WriteLine(resultFiveOneThree);
+
+			var resultFiveOneFour = Five.FiveOneFour(1, 5, 2);
+			//Console.WriteLine(resultFiveOneFour);
 
 			var resultFiveOneFive = Five.FiveOneFive(1234);
 			//Console.WriteLine(resultFiveOneFive);
@@ -169,7 +181,7 @@ namespace Assignment_6
 			//Console.WriteLine(resultFiveTwo);
 
 			var resultFiveThree = Five.FiveThree("AasdsaA");
-			Console.WriteLine(resultFiveThree);
+			//Console.WriteLine(resultFiveThree);
 
 			var resultFiveFour = Five.FiveFour(1, 2, 3, 4, 5);
 			var resultFiveFourv2 = Five.FiveFour(1, 2, 3);
@@ -177,6 +189,19 @@ namespace Assignment_6
 			//Console.WriteLine(resultFiveFour);
 			//Console.WriteLine(resultFiveFourv2);
 			//Console.WriteLine(resultFiveFourv3);
+
+			var resultFiveFive = Five.FiveFive();
+			//Console.WriteLine(resultFiveFive);
+
+			var resultFiveSix = Five.FiveSix(3, 3);
+			//Console.WriteLine(resultFiveSix);
+
+			//Console.WriteLine("enter the base");
+			//var baseNum = Console.ReadLine();
+			//Console.WriteLine("enter the exponent");
+			//var exponent = Console.ReadLine();
+			//var resultFiveSeven = Five.FiveSix(int.Parse(baseNum), int.Parse(exponent));
+			//Console.WriteLine(resultFiveSeven);
 		}
 	}
 }
