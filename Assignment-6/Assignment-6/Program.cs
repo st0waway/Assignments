@@ -18,13 +18,24 @@ namespace Assignment_6
 				//Console.WriteLine(oddNumber);
 			}
 
-			var newArray = One.OneTwo(new int[] { 10, 20, 30, 34, 37, 45 }, 3, 1);
+			var numbers = One.OneTwo(new int[] { 10, 20, 30, 34, 37, 23, 45 }, 2, 111);
+			foreach (var number in numbers)
+			{
+				//Console.WriteLine(number);
+			}
 
 			var distinctNumbers = One.OneThree(new int[] { 1, 1, 2, 3, 4, 4, 5, 5, 5, 5, 5, 5, 3, 2, 1, 4, 8 });
 			foreach (var distinctNumber in distinctNumbers)
 			{
 				//Console.WriteLine(distinctNumber);
 			}
+
+			var newArray = One.OneFour(new int[] { 10, -20, 30, 34, 37, 23, -45 }, 1112);
+			foreach (var i in newArray)
+			{
+				Console.WriteLine(i);
+			}
+
 
 			var noZeroNumbers = One.OneFive(new int[] { 1, 1, 2, 3, 4, 4, 5, 5, 5, 0, 0, 5, 5, 5, 3, 2, 1, 4, 8, 0, 0, 0 });
 			foreach (var noZeroNumber in noZeroNumbers)
@@ -155,7 +166,7 @@ namespace Assignment_6
 			var resultFourTwenty = Four.FourTwenty("asdfghj asdfgh asdf ass as a");
 			//Console.WriteLine(resultFourTwenty);
 
-			
+
 			var resultFiveOneOne = Five.FiveOneOne(1, 1, 43, 2);
 			//Console.WriteLine(resultFiveOneOne);
 
