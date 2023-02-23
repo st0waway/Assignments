@@ -1,6 +1,4 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
-
-namespace Assignment_6
+﻿namespace Assignment_6
 {
 	internal class One
 	{
@@ -37,7 +35,16 @@ namespace Assignment_6
 
 		public static int[] OneThree(int[] numbers)
 		{
-			return numbers.Distinct().ToArray();
+			var uniqueNumbers = new List<int>();
+			foreach (var number in numbers)
+			{
+				if (uniqueNumbers.Contains(number) == false)
+				{
+					uniqueNumbers.Add(number);
+				}
+			}
+
+			return uniqueNumbers.ToArray();
 		}
 
 		public static int[] OneFour(int[] numbers, int elementToInsert)
@@ -60,8 +67,30 @@ namespace Assignment_6
 
 		public static int[] OneFive(int[] numbers)
 		{
-			return numbers.Where(e => e != 0).ToArray();
+			int[] sortedNumbers = new int[numbers.Length];
 
+			var zeroCounter = 0;
+			var i = 0;
+			
+			foreach (var number in numbers)
+			{
+				if (number != 0)
+				{
+					sortedNumbers[i++] = number;
+				}
+				else
+				{
+					zeroCounter++;
+				}
+			}
+
+			var finalNumbers = new int[numbers.Length - zeroCounter];
+			for (int j = 0; j < numbers.Length - zeroCounter; j++)
+			{
+				finalNumbers[j] = sortedNumbers[j];
+			}
+			
+			return finalNumbers;
 		}
 	}
 }

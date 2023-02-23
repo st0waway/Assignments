@@ -1,10 +1,4 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel;
-
-using static System.Net.Mime.MediaTypeNames;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-
-using Console = System.Console;
+﻿using Console = System.Console;
 
 namespace Assignment_6
 {
@@ -33,7 +27,7 @@ namespace Assignment_6
 			var newArray = One.OneFour(new int[] { 10, -20, 30, 34, 37, 23, -45 }, 1112);
 			foreach (var i in newArray)
 			{
-				Console.WriteLine(i);
+				//Console.WriteLine(i);
 			}
 
 
